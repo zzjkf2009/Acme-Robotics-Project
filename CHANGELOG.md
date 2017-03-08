@@ -1,24 +1,20 @@
-change Log 
+Change Log
 
-All noteable changes to this project will be documented in this file
+All notable changes to this project will be documented in this file
 
 Unreleased
 
 Added
 
 
-
-changed
+Changed
 
 
 0.0.1-2017-03-07
 
 Added
-* add directory: app, include and test 
-* update README file 
-* add LIECNSE 
-* add directory: UML 
 
-
-
-
+*add directory: cpp, include and test
+*update README file
+*add LICENSE
+*add directory: UML
