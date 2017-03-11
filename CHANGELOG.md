@@ -10,6 +10,24 @@ Added
 Changed
 
 
+0.2.0-2017-03-10
+
+Added
+
+*add OpenCV library
+*update the CMakelists.txt
+
+
+
+
+0.1.0-2017-03-09
+
+Added
+
+*add Astar.h, Astar.cpp and main.cpp
+*update the CMakelists.txt
+
+
 0.0.1-2017-03-07
 
 Added
