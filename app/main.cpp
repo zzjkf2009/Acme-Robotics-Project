@@ -6,9 +6,11 @@
 #include"BuildingMap.h"
 #include <opencv2/opencv.hpp>
 
+typedef std::pair<int, int> coordinate;
+
 int main()
 {
-  typedef std::pair<int, int> coordinate;
+
     /* set the grid map
     1 stands for walkable path
     0 stands for blocked walls */

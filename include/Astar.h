@@ -16,7 +16,7 @@ public:
 
 #define ROW 10
 #define COL 10
-#define FLT_MAX 3.4e+38F
+#define FLT_MAX __FLT_MAX__
 struct node {
 
   int parent_x;
