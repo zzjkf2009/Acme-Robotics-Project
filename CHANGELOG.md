@@ -1,22 +1,24 @@
-Change Log
+#Change Log
 
 All notable changes to this project will be documented in this file
 
-Unreleased
+##Unreleased
 
-Added
+##Added
 
 
-Changed
-0.3.0-2017-03-12
+##Changed
 
-Added
+
+##0.3.0-2017-03-12
+
+##Added
 *Added Buildingmap.cpp and Buildingmap.h
 *Update the CMakelists.txt
 
-0.2.0-2017-03-10
+##0.2.0-2017-03-10
 
-Added
+##Added
 
 *add OpenCV library
 *update the CMakelists.txt
@@ -24,17 +26,17 @@ Added
 
 
 
-0.1.0-2017-03-09
+##0.1.0-2017-03-09
 
-Added
+##Added
 
 *add Astar.h, Astar.cpp and main.cpp
 *update the CMakelists.txt
 
 
-0.0.1-2017-03-07
+##0.0.1-2017-03-07
 
-Added
+##Added
 
 *add directory: cpp, include and test
 *update README file
