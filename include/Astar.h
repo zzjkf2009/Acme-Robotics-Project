@@ -12,9 +12,9 @@
 
 class Astar {
 
-private:
+public:
 
-#define ROW 9
+#define ROW 10
 #define COL 10
 #define FLT_MAX 3.4e+38F
 struct node {
@@ -30,11 +30,8 @@ struct node {
   bool isUnblocked(int grid[][COL], const int& x, const int& y);
   bool isGoalNode(const int& x, const int& y, coordinate goal);
   double calculate_H(const int& x, const int& y, coordinate goal);
-  void GeneratePath(node nodepath[][COL], coordinate goal);
-
-public:
-
-void WeightedAstar(int grid[][COL], coordinate start, coordinate goal,const int& weight);
+  std::stack < coordinate > GeneratePath(node nodepath[][COL], coordinate goal);
+  std::stack < coordinate > WeightedAstar(int grid[][COL], coordinate start, coordinate goal,const int& weight);
 
 };
 

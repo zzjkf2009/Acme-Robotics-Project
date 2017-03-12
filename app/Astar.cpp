@@ -8,7 +8,7 @@
 
 
 /*@ define a data structure contains some parameters that a node may have */
-
+typedef std::pair<int, int> coordinate;
 
 /*@  function to check if the input coordinate is inside the grid map*/
 bool Astar::isValid(const int& x, const int& y) {
@@ -50,7 +50,7 @@ return ((double) sqrt(
 /*@ function that will generate the path back from goal node to the start node
  and the path of the nodes will displayed on the screen */
 
-void Astar::GeneratePath(node nodepath[][COL], coordinate goal) {
+std::stack < coordinate > Astar::GeneratePath(node nodepath[][COL], coordinate goal) {
 
 printf("The path is  \n");
 
@@ -58,6 +58,7 @@ int x = goal.first;
 int y = goal.second;
 
 std::stack < coordinate > Path;
+std::stack < coordinate > PathOut;
 
 while(!(nodepath[x][y].parent_x==x && nodepath[x][y].parent_y==y)) {
 
@@ -68,39 +69,39 @@ x=temp_x;
 y=temp_y;
 }
 Path.push(std::make_pair(x, y));
+PathOut=Path;
 
 while (!Path.empty()) {
 
 std::pair<int, int> p = Path.top();
-Path.pop();
 printf("---->>>> (%d,%d) ", p.first, p.second);
-
+Path.pop();
 }
 
-return;
+return PathOut;
 }
 
-void Astar::WeightedAstar(int grid[][COL], coordinate start, coordinate goal,
+std::stack < coordinate > Astar::WeightedAstar(int grid[][COL], coordinate start, coordinate goal,
                           const int& weight) {
 
 if (isValid(start.first, start.second) == false) {
 
 printf("start node is invalid\n");
-return;
+return {};
 }
 
 if (isValid(goal.first, goal.second) == false) {
 
 
 printf("Goal node is invalid");
-return;
+return {};
 }
 
 if (isUnblocked(grid, start.first, start.second) == false
   || isUnblocked(grid, goal.first, goal.second) == false) {
 
 printf("Start or gaol node is blocked");
-return;
+return{};
 
 }
 
@@ -108,7 +109,7 @@ if (isGoalNode(start.first, goal.second, goal) == true) {
 
 
 printf("Start node and goal node are same");
-return;
+return{};
 }
 
 /*@ Create a close list and initial it to f*/
@@ -166,6 +167,7 @@ std::vector<int> sucessor_x = { -1, 0, 1 };
 std::vector<int> sucessor_y = { -1, 0, 1 };
 // For every node near the current node, top, top-left, top-right, left, right,
 // bottom, bottom-left, bottom-right
+std::stack < coordinate > PathOut;
 
 for (int k : sucessor_x) {
   for (int l : sucessor_y) {
@@ -176,9 +178,9 @@ for (int k : sucessor_x) {
         nodeinfo[i + k][j + l].parent_x = i;
         nodeinfo[i + k][j + l].parent_y = j;
         printf("The goal node is found\n" );
-        GeneratePath(nodeinfo,goal);
+        PathOut=GeneratePath(nodeinfo,goal);
         foundGoal = true;
-        return;
+        return PathOut;
       } else if (closedList[i + k][j + l] == false
           && isUnblocked(grid, i + k, j + l) == true) {
         Gnew = nodeinfo[i][j].G + sqrt(k * k + l * l);
@@ -203,5 +205,5 @@ for (int k : sucessor_x) {
 
 if (foundGoal == false)
 printf(" Failed to find the goal node");
-return;
+return {};
 }

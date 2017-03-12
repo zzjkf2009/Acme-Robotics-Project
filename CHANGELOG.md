@@ -8,7 +8,11 @@ Added
 
 
 Changed
+0.3.0-2017-03-12
 
+Added
+*Added Buildingmap.cpp and Buildingmap.h
+*Update the CMakelists.txt
 
 0.2.0-2017-03-10
 

@@ -9,3 +9,9 @@ build/
 
 # Python
 *.pyc
+
+# ignore md caches
+*.md~
+
+#ignore txt caches
+*.txt~
