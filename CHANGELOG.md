@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file
 ##Added
 
 *Add OpenCV library
+
 *Update the CMakelists.txt
 
 
@@ -33,6 +34,7 @@ All notable changes to this project will be documented in this file
 ##Added
 
 *Add Astar.h, Astar.cpp and main.cpp
+
 *Update the CMakelists.txt
 
 
@@ -41,6 +43,9 @@ All notable changes to this project will be documented in this file
 ##Added
 
 *Add directory: cpp, include and test
+
 *Update README file
+
 *Add LICENSE
+
 *Add directory: UML
