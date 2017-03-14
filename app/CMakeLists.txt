@@ -1,4 +1,4 @@
-add_executable(shell-app main.cpp Astar.cpp BuildingMap.cpp)
+add_executable(shell-app main.cpp Astar.cpp BuildingMap.cpp WeightedAstar.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )

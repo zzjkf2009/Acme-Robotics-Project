@@ -31,7 +31,7 @@ struct node {
   bool isGoalNode(const int& x, const int& y, coordinate goal);
   double calculate_H(const int& x, const int& y, coordinate goal);
   std::stack < coordinate > GeneratePath(node nodepath[][COL], coordinate goal);
- // std::stack < coordinate > WeightedAstar(int grid[][COL], coordinate start, coordinate goal,const int& weight);
+  std::stack < coordinate > WeightedAstar(int grid[][COL], coordinate start, coordinate goal,const int& weight);
 
 };
 

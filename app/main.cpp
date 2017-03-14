@@ -5,6 +5,7 @@
 #include<stack>
 #include"BuildingMap.h"
 #include <opencv2/opencv.hpp>
+#include"WeightedAstar.h"
 
 typedef std::pair<int, int> coordinate;
 
@@ -33,8 +34,8 @@ int main()
     coordinate goal=std::make_pair(9,5);
     std::stack < coordinate > Path;
     int weight=5;
-    Astar w_astar;
-    Path=w_astar.WeightedAstar(grid,start,goal,weight);
+    WeightedAstar w_astar;
+    Path=w_astar.WeightedA(grid,start,goal,weight);
     Buildingmap build;
     cv::Mat Map=build.drawGrids(grid,start,goal);
     cv::Mat PathIm=build.drawPath(Path,Map);

@@ -1,10 +1,13 @@
 #include <gtest/gtest.h>
 #include"Astar.h"
 #include"../app/Astar.cpp"
+#include"WeightedAstar.h"
+#include"../app/WeightedAstar.cpp"
 
 typedef std::pair<int, int> coordinate;
 
 Astar Testastar;
+WeightedAstar TestWeightA;
 
 TEST(Astartest, map_contrain){
 
@@ -41,7 +44,7 @@ TEST(Astartest, AstarAlgorithm){
   coordinate goal=std::make_pair(8,9);
   std::stack < coordinate > TestPath;
   int weight=5;
-  TestPath=Testastar.WeightedAstar(grid,start,goal,weight);
+  TestPath=TestWeightA.WeightedA(grid,start,goal,weight);
   EXPECT_NE(TestPath.empty(),1);
 
 }
