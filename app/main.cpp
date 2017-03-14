@@ -7,7 +7,7 @@
 #include <opencv2/opencv.hpp>
 #include"WeightedAstar.h"
 
-typedef std::pair<int, int> coordinate;
+
 
 int main()
 {
@@ -30,9 +30,9 @@ int main()
     };
     /* Set the start and goal node */
 
-    coordinate start=std::make_pair(5,4);
-    coordinate goal=std::make_pair(9,5);
-    std::stack < coordinate > Path;
+    Astar::coordinate start=std::make_pair(5,4);
+    Astar::coordinate goal=std::make_pair(9,5);
+    std::stack < Astar::coordinate > Path;
     int weight=5;
     WeightedAstar w_astar;
     Path=w_astar.WeightedA(grid,start,goal,weight);
