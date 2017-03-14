@@ -1,0 +1,17 @@
+#ifndef BUILDINGMAP_H
+#define BUILDINGMAP_H
+
+#include <opencv2/opencv.hpp>
+#include<cmath>
+#include<stack>
+#include"Astar.h"
+#define ROW 10
+#define COL 10
+
+class Buildingmap{
+ public:
+cv::Mat drawGrids(int grid[ROW][COL],Astar::coordinate start,Astar::coordinate goal);
+cv::Mat drawPath(std::stack < Astar::coordinate > Path, cv::Mat Background);
+};
+
+#endif // INCLUDE_BUILDINGMAP_H_

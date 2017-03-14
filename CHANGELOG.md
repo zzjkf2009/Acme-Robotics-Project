@@ -4,22 +4,25 @@ All notable changes to this project will be documented in this file
 
 ## Unreleased
 
+
+## 0.6.0-2017-03-14
+## Added
+* Modify all comments for all .cpp and .h in doxygen format
+* Reformat all code into goole c++ style
+* Add cppcheck and cpplint result in result folder
+
+## 0.5.0-2017-03-14
+
 ## Added
 
-
-## Changed
-
-## 0.5.0-2017-80-14
-
-## Added
-
-* Added Map class (Map.cpp and Map.h) for set the start and goal node
+* Add Map class (Map.cpp and Map.h) for set the start and goal node
 * Modify main.cpp and CMake file
 
 ## 0.4.0-2017-03-13
 
 ## Added
  * Add a derive class WeightedAstar (WeightedAstar.cpp and WeightedAstar.h) to base class Astar
+ * Change Astar class
  * Modify the main.cpp and CMake file
 
 ## 0.3.0-2017-03-12
@@ -33,7 +36,7 @@ All notable changes to this project will be documented in this file
 
 ## Added
 
-* Added Buildingmap.cpp and Buildingmap.h
+* Add Buildingmap.cpp and Buildingmap.h
 
 * Update the CMakelists.txt
 
