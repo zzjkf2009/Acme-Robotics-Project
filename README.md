@@ -2,21 +2,28 @@
 [![Build Status](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project.svg?branch=master)](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project)
 
 [![Coverage Status](https://coveralls.io/repos/github/zzjkf2009/Acme-Robotics-Project/badge.svg?branch=master)](https://coveralls.io/github/zzjkf2009/Acme-Robotics-Project?branch=master)
+
+
 ---
 ## Overview
 
-This is an exercise project to design a path planning components using high-quality software engineering practices. This project used WeightedA* graph search algorithm to find an optimal path from start node to goal node. User can define the walkable area and walls during a10 by 10 grid map. After define start and goal node, it will generate a path. Opencv library was used to draw the map and the path to provide a intuitive graph for user.
+This is an exercise project to design a path planning components using high-quality software engineering practices. This project used WeightedA* graph search algorithm to find an optimal path from start node to goal node. User can define the walkable area and walls inside a 10 by 10 grid map. After define start and goal node, it will generate a path. Opencv library was used to draw the map and the path to provide a intuitive graph for user.
+
+
 ---
 ## Product backlog
 
 ### See at
 
 https://docs.google.com/a/terpmail.umd.edu/document/d/1LW1pP-xllGP9OCM-kl9K2X37rjcMR1een2A6PK8dGJ0/edit?usp=sharing (Only can be viewed by people from University of Maryland)
+
 ---
 ## LICENSE
 ### See at
 
 https://github.com/zzjkf2009/Acme-Robotics-Project/blob/master/LICENSE
+
+
 ---
 ## Build
 
@@ -27,6 +34,7 @@ Run as fellow:
 * cmake ..
 * make
 ```
+
 ---
 ## Demo
 After the build process, run the executable demo program below, the path from start to goal node should be given if there
@@ -45,6 +53,7 @@ Path Output:
 ```
 ---->>>> (5,4) ---->>>> (6,3) ---->>>> (6,2) ---->>>> (7,1) ---->>>> (8,2) ---->>>> (8,3) ---->>>> (8,4) ---->>>> (9,5)
 ```
+
 ---
 ## Test
 After the build process, run the demo Test program
@@ -52,12 +61,14 @@ run:
 ```
 ./build/test/cpp-test
 ```
+
 ---
 ## Installation
 - Checkout the repo (and submodules)
 ```
 $ git clone --recursive https://github.com/zzjkf2009/Acme-Robotics-Project.git
 ```
+
 ---
 ## Documentation
 follow the instruction below to generate doxygen documentation
