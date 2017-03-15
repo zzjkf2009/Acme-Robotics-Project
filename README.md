@@ -42,7 +42,9 @@ A demo map image is like:
 Start node (5,4)
 goal node (9,5)
 Path Output: 
+```
 ---->>>> (5,4) ---->>>> (6,3) ---->>>> (6,2) ---->>>> (7,1) ---->>>> (8,2) ---->>>> (8,3) ---->>>> (8,4) ---->>>> (9,5)
+```
 ---
 ## Test
 After the build process, run the demo Test program
