@@ -1,18 +1,21 @@
 # Acme-Robotics-Project
 [![Build Status](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project.svg?branch=master)](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project)
 
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/zzjkf2009/Acme-Robotics-Project/badge.svg?branch=master)](https://coveralls.io/github/zzjkf2009/Acme-Robotics-Project?branch=master)
 ---
 ## Overview
+
 This is an exercise project to design a path planning components using high-quality software engineering practices. This project used WeightedA* graph search algorithm to find an optimal path from start node to goal node. Opencv library was used to draw the map and the path to provide a intuitive graph for user.
 ---
 ## Product backlog
 
 ### See at
+
 https://docs.google.com/a/terpmail.umd.edu/document/d/1LW1pP-xllGP9OCM-kl9K2X37rjcMR1een2A6PK8dGJ0/edit?usp=sharing (Only can be viewed by people from University of Maryland)
 ---
 ## LICENSE
 ### See at
+
 https://github.com/zzjkf2009/Acme-Robotics-Project/blob/master/LICENSE
 ---
 ## Build
