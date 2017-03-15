@@ -1,4 +1,5 @@
 # Acme-Robotics-Project
+[![Build Status](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project.svg?branch=master)](https://travis-ci.org/zzjkf2009/Acme-Robotics-Project)
 This is an exercise project to design a robotics-based path planning components using  high-quality software engineering practices
 
 
