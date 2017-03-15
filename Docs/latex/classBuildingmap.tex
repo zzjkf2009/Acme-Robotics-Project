@@ -1,0 +1,60 @@
+\hypertarget{classBuildingmap}{\section{Buildingmap Class Reference}
+\label{classBuildingmap}\index{Buildingmap@{Buildingmap}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+cv\-::\-Mat \hyperlink{classBuildingmap_a6fdcdfd5c371e0c43f39ff6e4ae99bc1}{draw\-Grids} (int grid\mbox{[}R\-O\-W\mbox{]}\mbox{[}C\-O\-L\mbox{]}, Astar\-::coordinate start, Astar\-::coordinate goal)
+\begin{DoxyCompactList}\small\item\em Funtion that draw the grid map by using Opencv, walls will be black start and goal node are R\-G\-B\mbox{[}0,255,255\mbox{]}. \end{DoxyCompactList}\item 
+cv\-::\-Mat \hyperlink{classBuildingmap_a9d149d9b85adfe94a91bed65736c0ed9}{draw\-Path} (std\-::stack$<$ Astar\-::coordinate $>$ Path, cv\-::\-Mat Background)
+\begin{DoxyCompactList}\small\item\em Funtion that draw the path node which are R\-G\-B\mbox{[}0,255,255\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBuildingmap_a6fdcdfd5c371e0c43f39ff6e4ae99bc1}{\index{Buildingmap@{Buildingmap}!draw\-Grids@{draw\-Grids}}
+\index{draw\-Grids@{draw\-Grids}!Buildingmap@{Buildingmap}}
+\subsubsection[{draw\-Grids}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat Buildingmap\-::draw\-Grids (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}\-R\-O\-W\mbox{]}\mbox{[}\-C\-O\-L\mbox{]}, }
+\item[{Astar\-::coordinate}]{start, }
+\item[{Astar\-::coordinate}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classBuildingmap_a6fdcdfd5c371e0c43f39ff6e4ae99bc1}
+
+
+Funtion that draw the grid map by using Opencv, walls will be black start and goal node are R\-G\-B\mbox{[}0,255,255\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & grid\mbox{[}\mbox{]}\mbox{[}\mbox{]}, start and goal coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\-::\-Mat, an image show map including walls, start, goal node 
+\end{DoxyReturn}
+\hypertarget{classBuildingmap_a9d149d9b85adfe94a91bed65736c0ed9}{\index{Buildingmap@{Buildingmap}!draw\-Path@{draw\-Path}}
+\index{draw\-Path@{draw\-Path}!Buildingmap@{Buildingmap}}
+\subsubsection[{draw\-Path}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat Buildingmap\-::draw\-Path (
+\begin{DoxyParamCaption}
+\item[{std\-::stack$<$ Astar\-::coordinate $>$}]{Path, }
+\item[{cv\-::\-Mat}]{Background}
+\end{DoxyParamCaption}
+)}}\label{classBuildingmap_a9d149d9b85adfe94a91bed65736c0ed9}
+
+
+Funtion that draw the path node which are R\-G\-B\mbox{[}0,255,255\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & nodes in stack $<$coordinate$>$, map image Background, in cv\-::\-Mat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\-::\-Mat, an image show map including walls, start, goal node anb path 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/zejiang/\-Acme-\/\-Robotics-\/\-Project/include/\hyperlink{BuildingMap_8h}{Building\-Map.\-h}\item 
+/home/zejiang/\-Acme-\/\-Robotics-\/\-Project/app/\hyperlink{BuildingMap_8cpp}{Building\-Map.\-cpp}\end{DoxyCompactItemize}

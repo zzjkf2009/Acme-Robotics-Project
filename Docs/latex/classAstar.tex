@@ -1,0 +1,145 @@
+\hypertarget{classAstar}{\section{Astar Class Reference}
+\label{classAstar}\index{Astar@{Astar}}
+}
+Inheritance diagram for Astar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAstar}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAstar_1_1node}{node}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAstar_a04e8b99eac6befb77c852c6f4155750a}{typedef std\-::pair$<$ int, int $>$ {\bfseries coordinate}}\label{classAstar_a04e8b99eac6befb77c852c6f4155750a}
+
+\item 
+\hypertarget{classAstar_a17c239ece99dd7cb5a92f5cf1404ff5d}{typedef std\-::pair$<$ double, \\*
+std\-::pair$<$ int, int $>$ $>$ {\bfseries Open\-\_\-list}}\label{classAstar_a17c239ece99dd7cb5a92f5cf1404ff5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAstar_ae0a5f0484d586ddf52386342c7ff8b93}{is\-Valid} (const int \&x, const int \&y)
+\begin{DoxyCompactList}\small\item\em Function that checks if the input coordinate is inside the grid map. \end{DoxyCompactList}\item 
+bool \hyperlink{classAstar_a1613491885502d624c092c6be8cfa6d1}{is\-Unblocked} (int grid\mbox{[}$\,$\mbox{]}\mbox{[}C\-O\-L\mbox{]}, const int \&x, const int \&y)
+\begin{DoxyCompactList}\small\item\em Function that checks if the grid is a block or wall something like that. \end{DoxyCompactList}\item 
+bool \hyperlink{classAstar_a5525777aa1a1a6331c9c478df8c42591}{is\-Goal\-Node} (const int \&x, const int \&y, coordinate goal)
+\item 
+double \hyperlink{classAstar_a3f3b3457c622567a78dbf4e4aa0d62e2}{calculate\-\_\-\-H} (const int \&x, const int \&y, coordinate goal)
+\begin{DoxyCompactList}\small\item\em Function that calculates the heuristic value between current node and goal node method usd here is Eucliden Distance. Other method like Diagnal Distance or Manhattan Distance are also appliable. \end{DoxyCompactList}\item 
+std\-::stack$<$ coordinate $>$ \hyperlink{classAstar_a9063e14becd59719140e99554fb57822}{Generate\-Path} (\hyperlink{structAstar_1_1node}{node} nodepath\mbox{[}$\,$\mbox{]}\mbox{[}C\-O\-L\mbox{]}, coordinate goal)
+\begin{DoxyCompactList}\small\item\em Function that will generate the path back from goal node to the start node and the path of the nodes will displayed on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAstar_a3f3b3457c622567a78dbf4e4aa0d62e2}{\index{Astar@{Astar}!calculate\-\_\-\-H@{calculate\-\_\-\-H}}
+\index{calculate\-\_\-\-H@{calculate\-\_\-\-H}!Astar@{Astar}}
+\subsubsection[{calculate\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}double Astar\-::calculate\-\_\-\-H (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x, }
+\item[{const int \&}]{y, }
+\item[{coordinate}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classAstar_a3f3b3457c622567a78dbf4e4aa0d62e2}
+
+
+Function that calculates the heuristic value between current node and goal node method usd here is Eucliden Distance. Other method like Diagnal Distance or Manhattan Distance are also appliable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em two} & int x and y, coordinate of gaol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+doule 
+\end{DoxyReturn}
+\hypertarget{classAstar_a9063e14becd59719140e99554fb57822}{\index{Astar@{Astar}!Generate\-Path@{Generate\-Path}}
+\index{Generate\-Path@{Generate\-Path}!Astar@{Astar}}
+\subsubsection[{Generate\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::stack$<$ coordinate $>$ Astar\-::\-Generate\-Path (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{nodepath\mbox{[}$\,$\mbox{]}\mbox{[}\-C\-O\-L\mbox{]}, }
+\item[{coordinate}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classAstar_a9063e14becd59719140e99554fb57822}
+
+
+Function that will generate the path back from goal node to the start node and the path of the nodes will displayed on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodepath} & and goal coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stack$<$coordinate$>$ 
+\end{DoxyReturn}
+\hypertarget{classAstar_a5525777aa1a1a6331c9c478df8c42591}{\index{Astar@{Astar}!is\-Goal\-Node@{is\-Goal\-Node}}
+\index{is\-Goal\-Node@{is\-Goal\-Node}!Astar@{Astar}}
+\subsubsection[{is\-Goal\-Node}]{\setlength{\rightskip}{0pt plus 5cm}bool Astar\-::is\-Goal\-Node (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x, }
+\item[{const int \&}]{y, }
+\item[{coordinate}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classAstar_a5525777aa1a1a6331c9c478df8c42591}
+@ Funtion that checks if it is the goal node 
+\begin{DoxyParams}{Parameters}
+{\em two} & int x and y, goal coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean,ture or false 
+\end{DoxyReturn}
+\hypertarget{classAstar_a1613491885502d624c092c6be8cfa6d1}{\index{Astar@{Astar}!is\-Unblocked@{is\-Unblocked}}
+\index{is\-Unblocked@{is\-Unblocked}!Astar@{Astar}}
+\subsubsection[{is\-Unblocked}]{\setlength{\rightskip}{0pt plus 5cm}bool Astar\-::is\-Unblocked (
+\begin{DoxyParamCaption}
+\item[{int}]{grid\mbox{[}$\,$\mbox{]}\mbox{[}\-C\-O\-L\mbox{]}, }
+\item[{const int \&}]{x, }
+\item[{const int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{classAstar_a1613491885502d624c092c6be8cfa6d1}
+
+
+Function that checks if the grid is a block or wall something like that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid\mbox{[}10\mbox{]}\mbox{[}10\mbox{]},coordinate} & x and y, int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean ture or false 
+\end{DoxyReturn}
+\hypertarget{classAstar_ae0a5f0484d586ddf52386342c7ff8b93}{\index{Astar@{Astar}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!Astar@{Astar}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Astar\-::is\-Valid (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x, }
+\item[{const int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{classAstar_ae0a5f0484d586ddf52386342c7ff8b93}
+
+
+Function that checks if the input coordinate is inside the grid map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em two} & integars \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ture or false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/zejiang/\-Acme-\/\-Robotics-\/\-Project/include/Astar.\-h\item 
+/home/zejiang/\-Acme-\/\-Robotics-\/\-Project/app/\hyperlink{Astar_8cpp}{Astar.\-cpp}\end{DoxyCompactItemize}
