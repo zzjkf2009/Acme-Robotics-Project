@@ -75,7 +75,3 @@ Last, run below to generate html and Latex format files
 ```
 $ doxygen my_proj.conf 
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> d5f8d4c6c40f0e05b3b203415f159b917ad0ce68
