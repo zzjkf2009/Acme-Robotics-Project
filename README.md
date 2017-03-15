@@ -5,7 +5,7 @@
 ---
 ## Overview
 
-This is an exercise project to design a path planning components using high-quality software engineering practices. This project used WeightedA* graph search algorithm to find an optimal path from start node to goal node. Opencv library was used to draw the map and the path to provide a intuitive graph for user.
+This is an exercise project to design a path planning components using high-quality software engineering practices. This project used WeightedA* graph search algorithm to find an optimal path from start node to goal node. User can define the walkable area and walls during a10 by 10 grid map. After define start and goal node, it will generate a path. Opencv library was used to draw the map and the path to provide a intuitive graph for user.
 ---
 ## Product backlog
 
