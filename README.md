@@ -58,3 +58,20 @@ run:
 ```
 $ git clone --recursive https://github.com/zzjkf2009/Acme-Robotics-Project.git
 ```
+---
+## Documentation
+follow the instruction below to generate doxygen documentation
+before donig it, make sure you install the doxygen by doing
+```
+$ sudo apt-get install doxygen
+$ sudo apt-get install graphviz
+```
+First, generate a project-specific congfiuration doc
+```
+$ doxygen -g my_proj.conf 
+```
+Then modify the congfiuration doc in text editor and specify the root directory that contains the project's source files.
+Last, run below to generate html and Latex format files
+```
+$ doxygen my_proj.conf 
+```
