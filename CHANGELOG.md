@@ -3,7 +3,11 @@
 All notable changes to this project will be documented in this file
 
 ## Unreleased
-
+## 0.7.0-2017-03-14
+## Added
+* Add doxygen documentation
+* Modify README file 
+* Add demo map image
 
 ## 0.6.0-2017-03-14
 ## Added
